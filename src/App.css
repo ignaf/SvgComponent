@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.contenedor{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contenedor>div.card{
+  background-color: #fafafa;
+  width: 350px;
+}

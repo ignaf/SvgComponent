@@ -1,20 +1,28 @@
-import Github from "./iconComponents/githubIcon";
-import Trello from "./iconComponents/trelloIcon";
+import Card from "./Components/Card";
 import "./App.css";
 import React from "react";
+import { ReactComponent as Fette } from "./img/Fette.svg";
+import { ReactComponent as Loesch } from "./img/Loesch.svg";
+import { ReactComponent as Ma357 } from "./img/MA357.svg";
+import { ReactComponent as T800 } from "./img/T800.svg";
 
 function App() {
   return (
     <React.Fragment>
-      <nav className="navbar bg-dark">
-        <div className="container">
-          <Github width="50" height="50" />
-          <Github width="100" height="100" color={"#333"} />
-          <Trello />
-          <Trello width="200px" fontColor="#fff" />
-          <Trello width="600px" fontColor="#333" iconColor="#fafafa" />
-        </div>
-      </nav>
+      <div className="contenedor">
+        <Card title="Comprimidora">
+          <Fette />
+        </Card>
+        <Card title="Envolvedora">
+          <Loesch />
+        </Card>
+        <Card title="Entubadora">
+          <T800 />
+        </Card>
+        <Card title="Estuchadora">
+          <Ma357 />
+        </Card>
+      </div>
     </React.Fragment>
   );
 }
