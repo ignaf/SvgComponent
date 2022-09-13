@@ -1,26 +1,26 @@
 import Card from "./Components/Card";
 import "./App.css";
 import React from "react";
-import { ReactComponent as Fette } from "./img/Fette.svg";
-import { ReactComponent as Loesch } from "./img/Loesch.svg";
-import { ReactComponent as Ma357 } from "./img/MA357.svg";
-import { ReactComponent as T800 } from "./img/T800.svg";
+import FetteSvg from "./Components/svgComponents/fette";
+import LoeschSvg from "./Components/svgComponents/loesch";
+import T800Svg from "./Components/svgComponents/t800";
+import Ma357Svg from "./Components/svgComponents/ma357";
 
 function App() {
   return (
     <React.Fragment>
       <div className="contenedor">
         <Card title="Comprimidora">
-          <Fette />
+          <FetteSvg />
         </Card>
         <Card title="Envolvedora">
-          <Loesch />
+          <LoeschSvg />
         </Card>
         <Card title="Entubadora">
-          <T800 />
+          <T800Svg />
         </Card>
         <Card title="Estuchadora">
-          <Ma357 />
+          <Ma357Svg />
         </Card>
       </div>
     </React.Fragment>
