@@ -19,6 +19,11 @@
     background-color: #fafafa;
     width: 25%;
   }
+  .card--svg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .contenedor>div.card--png{
     width: 100%;
   }
